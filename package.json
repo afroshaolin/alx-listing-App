@@ -2,8 +2,10 @@
   "name": "alx-listing-app",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
-    "dev": "next dev",
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
